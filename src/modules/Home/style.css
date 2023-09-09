@@ -1,0 +1,9 @@
+.bodyHome {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../assets/images/PNL_BACKGROUND.png");
+    margin: 0px;
+    height:100vh;
+  }
+  
