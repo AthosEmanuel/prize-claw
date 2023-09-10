@@ -1,17 +1,10 @@
-.bodyHome {
+.bodyLogin {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-image: url("../../assets/images/PNL_BACKGROUND.png");
     margin: 0px;
     height:100vh;
   }
 
-  .bodyButtons {
-    
-    justify-items: center;
-    display: grid;
-    align-items: flex-end;
-    grid-template-columns: auto auto auto;
-   
-  }

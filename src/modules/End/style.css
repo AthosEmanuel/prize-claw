@@ -1,0 +1,9 @@
+.bodyEnd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../../assets/images/PNL_BACKGROUND.png");
+  margin: 0px;
+  height: 100vh;
+}

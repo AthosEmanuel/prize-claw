@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-
-import reportWebVitals from './reportWebVitals';
-import { Home } from './modules';
+import reportWebVitals from "./reportWebVitals";
+import { Home, Login } from "./modules";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/"  element={<Home/>}></Route>
+        <Route path="/" element={<Login />}></Route>
+        <Route path="/home" element={<Home />}></Route>
         {/* <Route path="/pokedex"  element={Pokedex}></Route>
         <Route path="/details"  element={Details}></Route> */}
       </Routes>
