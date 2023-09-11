@@ -1,46 +1,24 @@
-# Getting Started with Create React App
+# Prize Claw !!!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de Prize Claw (Jogo da Garra), que possui 5 telas, cada uma com uma funcionalidade diferente. Este projeto tem como objetivo mostrar algumas funcionalidades do React, desde o seu useEffect até bibliotecas disponíveis pela comunidade.
 
-## Available Scripts
+O projeto foi criado utilizando a modularização, que é uma abordagem fundamental na construção de aplicativos React, pois ajuda a organizar o código de forma mais clara, promove a reutilização de código e facilita a manutenção do aplicativo.
 
-In the project directory, you can run:
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
+
+### `npm install`
+
+instala as dependencias necessarias para rodar o projeto. 
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Executa o aplicativo no modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A página será recarregada se você fizer edições.\
+Você também verá quaisquer erros de lint no console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
