@@ -1,32 +1,31 @@
-import React, { useEffect, useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import React from "react";
+import useSound from "use-sound";
+import { useNavigate } from "react-router-dom";
+import { buttonSound } from "../../assets";
 
-import "./style.css";
-
-const Home: React.FC = () => {
-  const [count, setCount] = useState(0);
-
+const EndScreen: React.FC = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1e3);
-    return () => clearTimeout(timer);
-  }, [count]);
+  const sendToFirstScreen = () => {
+    playSoundButton();
 
-  if (count == 3) {
     navigate("/");
-  }
+  };
 
-  console.log(count);
-  useEffect(() => {
-    //setClawSelected(false);
-  }, []);
+  const [playSoundButton] = useSound(buttonSound);
 
   return (
-    <div className="bodyEnd">
-      <h1>END</h1>
+    <div className="commonBody">
+      <h1>Obrigado por jogar!</h1>
+      <button
+        className="buttonStyle"
+        style={{ fontSize: 15 }}
+        onClick={sendToFirstScreen}
+      >
+        JOGAR NOVAMENTE
+      </button>
     </div>
   );
 };
 
-export default Home;
+export default EndScreen;

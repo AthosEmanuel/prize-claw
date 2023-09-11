@@ -16,9 +16,19 @@ const Button: React.FC<ButtonProps> = ({
   imageSelect,
 }) => {
   return isSelect ? (
-    <img style={customStyles} onClick={handleEvent} src={imageSelect}></img>
+    <img
+      style={customStyles}
+      onClick={handleEvent}
+      src={imageSelect}
+      alt={imageSelect}
+    ></img>
   ) : (
-    <img style={customStyles} onClick={handleEvent} src={image}></img>
+    <img
+      style={customStyles}
+      onClick={handleEvent}
+      src={image}
+      alt={imageSelect}
+    ></img>
   );
 };
 

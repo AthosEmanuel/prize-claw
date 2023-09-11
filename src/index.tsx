@@ -1,24 +1,50 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect, useState } from "react";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import reportWebVitals from "./reportWebVitals";
-import { Home, Login } from "./modules";
+import useSound from "use-sound";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />}></Route>
-        <Route path="/home" element={<Home />}></Route>
-        {/* <Route path="/pokedex"  element={Pokedex}></Route>
-        <Route path="/details"  element={Details}></Route> */}
-      </Routes>
-    </Router>
-  </React.StrictMode>,
-  document.getElementById("root")
+import { Main, Login, Ranking, End, Start } from "./modules";
+
+import "./style.css";
+import { music } from "./assets";
+
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
 );
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+function App() {
+  const [playSound] = useSound(music, { loop: true });
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const handleDocumentClick = () => {
+      if (count === 0) {
+        playSound();
+        setCount(1);
+        document.removeEventListener("click", handleDocumentClick);
+      }
+    };
+    document.addEventListener("click", handleDocumentClick);
+    return () => {
+      document.removeEventListener("click", handleDocumentClick);
+    };
+  }, [count, playSound]);
+
+  return (
+    <React.StrictMode>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Start />}></Route>
+          <Route path="/loading" element={<Login />}></Route>
+          <Route path="/main" element={<Main />}></Route>
+          <Route path="/ranking" element={<Ranking />}></Route>
+          <Route path="/end" element={<End />}></Route>
+        </Routes>
+      </Router>
+    </React.StrictMode>
+  );
+}
+
+root.render(<App />);
 reportWebVitals();

@@ -1,10 +1,11 @@
-.bodyRanking {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-image: url("../../assets/images/PNL_BACKGROUND.png");
-    margin: 0px;
-    height:100vh;
-  }
-
+.inputStyle {
+  height: 50px;
+  width: 200px;
+  margin: 2em auto;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}

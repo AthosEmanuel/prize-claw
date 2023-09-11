@@ -1,0 +1,20 @@
+.bodyHome {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../../assets/images/PNL_BACKGROUND.png");
+  margin: 0px;
+  height: 100vh;
+}
+
+.bodyButtons {
+  justify-items: center;
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: auto auto auto;
+}
+
+.headerMain{
+  height: 50px;
+  background-image: url("../../assets/images/PNL_BarraSuperior.png");
+}

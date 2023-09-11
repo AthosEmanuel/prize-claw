@@ -15,6 +15,9 @@ import BTN_Garra_DW from "./images/BTN_Garra-DW.png";
 
 import PNL_BarraSuperior from "./images/PNL_BarraSuperior.png";
 
+import music from "./sounds/music.mp3";
+import buttonSound from "./sounds/button.wav"
+
 export {
   BTN_Baixo,
   BTN_Baixo_DW,
@@ -27,4 +30,7 @@ export {
   BTN_Garra,
   BTN_Garra_DW,
   PNL_BarraSuperior,
+  music,
+  buttonSound
+
 };

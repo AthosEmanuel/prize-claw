@@ -1,0 +1,20 @@
+.commonBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("./assets/images/PNL_BACKGROUND.png");
+    height:100vh;
+  }
+
+  .buttonStyle {
+    height: 50px;
+    width: 200px;
+    margin: 2em auto;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
