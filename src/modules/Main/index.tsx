@@ -98,40 +98,61 @@ const Main: React.FC = () => {
           customStyles={{ marginBottom: 30, marginTop: 80, height: 200 }}
           isSelect={clawSelected}
           handleEvent={onchangeClawState}
+          alt="Garra"
         ></Button>
-        <div className="bodyButtons">
-          <div></div>
+
+        <div
+          style={{
+            marginTop: 50,
+            display: "flex",
+            flexDirection: "column",
+            justifyItems: "center",
+            alignItems: "center",
+          }}
+        >
           <Button
             image={BTN_Cima}
             imageSelect={BTN_Cima_DW}
-            customStyles={{ height: 100 }}
+            customStyles={{ height: 100, width: 100, marginBottom: -23 }}
             isSelect={upArrowSelected}
             handleEvent={onchangeUpArrowState}
+            alt="Ceta para cima"
           ></Button>
 
-          <div></div>
-          <Button
-            image={BTN_Esquerda}
-            imageSelect={BTN_Esquerda_DW}
-            customStyles={{ height: 100 }}
-            isSelect={leftArrowSelected}
-            handleEvent={onchangeLeftArrowState}
-          ></Button>
-          <div></div>
-          <Button
-            image={BTN_Direita}
-            imageSelect={BTN_Direita_DW}
-            customStyles={{ height: 100 }}
-            isSelect={rightArrowSelected}
-            handleEvent={onchangeRightArrowState}
-          ></Button>
-          <div></div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              rowGap: 10,
+            }}
+          >
+            <Button
+              image={BTN_Esquerda}
+              imageSelect={BTN_Esquerda_DW}
+              customStyles={{ height: 100 }}
+              isSelect={leftArrowSelected}
+              handleEvent={onchangeLeftArrowState}
+              alt="Ceta para esquerda"
+            ></Button>
+            <div style={{ width: 20 }}></div>
+            <Button
+              image={BTN_Direita}
+              imageSelect={BTN_Direita_DW}
+              customStyles={{ height: 100 }}
+              isSelect={rightArrowSelected}
+              handleEvent={onchangeRightArrowState}
+              alt="Ceta para direita"
+            ></Button>
+          </div>
+
           <Button
             image={BTN_Baixo}
             imageSelect={BTN_Baixo_DW}
-            customStyles={{ height: 100 }}
+            customStyles={{ height: 100, width: 100, marginTop: -20 }}
             isSelect={downArrowSelected}
             handleEvent={onchangeDownArrowState}
+            alt="Ceta para baixo"
           ></Button>
         </div>
       </div>

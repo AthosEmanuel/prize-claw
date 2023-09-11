@@ -6,6 +6,7 @@ interface ButtonProps {
   isSelect: boolean;
   image: string;
   imageSelect: string;
+  alt: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -14,21 +15,17 @@ const Button: React.FC<ButtonProps> = ({
   isSelect,
   image,
   imageSelect,
+  alt,
 }) => {
   return isSelect ? (
     <img
       style={customStyles}
       onClick={handleEvent}
       src={imageSelect}
-      alt={imageSelect}
+      alt={alt}
     ></img>
   ) : (
-    <img
-      style={customStyles}
-      onClick={handleEvent}
-      src={image}
-      alt={imageSelect}
-    ></img>
+    <img style={customStyles} onClick={handleEvent} src={image} alt={alt}></img>
   );
 };
 
