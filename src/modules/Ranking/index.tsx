@@ -34,6 +34,7 @@ const RankingScreen: React.FC = () => {
         maxLength={3}
         value={user}
         onChange={handleChange}
+        placeholder="Digite seu nome"
       ></input>
       <button
         className="buttonStyle"
@@ -47,16 +48,3 @@ const RankingScreen: React.FC = () => {
 };
 
 export default RankingScreen;
-
-// getInitialState() {
-//   return {email: ''}
-// },
-// handleChange(e) {
-//   this.setState({email: e.target.value})
-// },
-// render() {
-//   return <div>
-//     <input name="email" value={this.state.email} onChange={this.handleChange}/>
-//     <button type="button" disabled={!this.state.email}>Button</button>
-//   </div>
-// }

@@ -106,7 +106,6 @@ const Main: React.FC = () => {
             marginTop: 50,
             display: "flex",
             flexDirection: "column",
-            justifyItems: "center",
             alignItems: "center",
           }}
         >
@@ -124,7 +123,6 @@ const Main: React.FC = () => {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              rowGap: 10,
             }}
           >
             <Button
